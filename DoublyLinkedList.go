@@ -23,6 +23,7 @@ func (dl *DoublyLinkedList) Display() {
 		fmt.Print("-->", current.data)
 		current = current.Next
 	}
+
 }
 func (dl *DoublyLinkedList) Append(value int) {
 	newNode := &Node{data: value, Next: dl.Head}
